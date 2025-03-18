@@ -1,0 +1,44 @@
+.cardWithImage-container{
+	margin: 140px auto ;
+}
+.cardWithImage-card-image img {
+  width: 100%;
+}
+.cardWithImage-card-image {
+  width: 337px;
+  margin: 0 auto 50px;
+
+}
+.cardWithImage-card-content {
+  text-align: center;
+}
+.cardWithImage-card-title {
+  color: var(--dar-grey-bleu);
+  font-family: "Fraunces 9pt";
+  font-size: 2.13rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 3.2rem; /* 150% */
+}
+
+@media only screen and (min-width: 768px) {
+  .cardWithImage-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cardWithImage-card-image {
+    /* width: 281px; */
+    flex: none;
+	margin: auto;
+	margin-right: 60px;
+  }
+  .cardWithImage-card-content {
+    /* width:  339px; */
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+	.cardWithImage-container{
+		max-width: 90%;
+	}
+}

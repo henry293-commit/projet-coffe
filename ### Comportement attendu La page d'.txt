@@ -1,0 +1,31 @@
+### Comportement attendu La page d'abonnement interactive présente un certain nombre de comportements spécifiques, répertoriés ci-dessous :
+ - Si "Capsule" est sélectionné pour la première option 
+       - Le message "Voulez-vous qu'on les broie ?" La section doit être désactivée et ne peut pas être ouverte 
+ - Mises à jour des textes récapitulatifs de la commande  
+      - Si "Capsule" est sélectionné, mettez à jour le texte récapitulatif de la commande comme suit :  
+           - "Je bois mon café **avec** des capsules"  
+           - Supprimez le texte de sélection de mouture 
+      - Si "Filtre" ou "Espresso" sont sélectionnés, mettez à jour le texte du récapitulatif de la commande comme suit : 
+           - "Je bois mon café **comme** Filtre||Espresso" 
+           - Conserver/Ajouter le texte de sélection de mouture 
+     - Pour toutes les autres sélections, ajoutez le titre de la sélection dans l'espace vide, le cas échéant  
+- Mise à jour du prix par envoi (indiqué dans la section « À quelle fréquence devons nous livrer ? » en bas) en fonction du poids sélectionné 
+    - Si un poids de 250 g est sélectionné 
+         - Chaque semaine, le prix par envoi est de 7,20 $ 
+         - Tous les 2 Le prix hebdomadaire par envoi est de 9,60 $ 
+         - Le prix mensuel par envoi est de 12,00 $ 
+   - Si un poids de 500 g est sélectionné 
+         - Le prix hebdomadaire par envoi est de 13,00 $ 
+         - Tous les 2 Le prix hebdomadaire par envoi est de 17,50 $ 
+         - Le prix mensuel par envoi est de 22,00 $ 
+   - Si le poids est de 1 000 g sélectionné   
+         - Le prix hebdomadaire par envoi est de 22,00 $ 
+         - Le prix par envoi toutes les 2 semaines est de 32,00 $ 
+         - Le prix mensuel par envoi est de 42,00 $ 
+  - Calcul du coût mensuel pour le modal Récapitulatif de la commande 
+         - Si Chaque semaine est sélectionné, le modal Récapitulatif de la commande doit afficher le par envoi multiplié par 4. Par exemple, si un poids de 250 g est sélectionné, le prix serait de 28,80 $/mois.
+         - Si Toutes les 2 semaines est sélectionné, le modal Récapitulatif de la commande devrait afficher le prix par envoi multiplié par 2. Par exemple, si 250 g le poids est sélectionné, le prix serait de 19,20 $/mois.     
+         - Si Chaque mois est sélectionné, le récapitulatif de la commande devrait afficher le prix par expédition multiplié par 1. Par exemple, si un poids de 250 g est sélectionné, le prix serait de 12,00 $/mois.
+
+
+montrez ces différences, afin que vous puissiez vous y référer pour avoir une idée de ce qui est nécessaire pour les différents états.

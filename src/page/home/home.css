@@ -1,0 +1,165 @@
+.Container-home {
+  padding: 0 24px;
+  margin: 0 auto;
+}
+.collection img {
+  width: 100%;
+}
+.collection {
+  text-align: center;
+  margin: 120px 0;
+}
+.collection-title {
+  background: linear-gradient(180deg, rgba(254, 252, 247, 0) 0%, #fefcf7 100%);
+}
+.collection-title strong {
+  color: var(--grey);
+  text-align: center;
+  font-family: "Fraunces 9pt";
+  font-size: 2.6667rem;
+  font-weight: 900;
+  line-height: 4.8rem;
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.collection-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 94%;
+  margin: 0 auto;
+}
+.card-explain {
+  position: relative;
+}
+.home-card-about {
+  position: absolute;
+  top: 305px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 95%;
+  margin: 0 auto;
+}
+.home-card-about .collection-one-item {
+  padding: 72px 33.5px 51px;
+  border-radius: 8px;
+  background-color: #0e8784;
+  margin-bottom: 24px;
+}
+.home-card-about .collection-one-item:last-child {
+  margin-bottom: 0;
+}
+.home-card-about .collection-item-img {
+  width: 72px;
+  margin-bottom: 56px;
+}
+.home-card-about .collection-item-title {
+  color: var(--light-cream);
+  margin-bottom: 24px;
+}
+.home-card-about .collection-item-desc {
+  color: var(--light-cream);
+  opacity: 0.8;
+}
+.section-work {
+  margin: 840px auto 120px;
+  text-align: center;
+  font-family: "Fraunces 9pt";
+  max-width: 95%;
+}
+.section-work-title {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2.133rem;
+  margin-bottom: 80px;
+  display: block;
+}
+.btn-work {
+  display: block;
+  width: 217px;
+  margin: 20px auto 0;
+}
+/* LA specification du component cardAbout dans home  */
+.card-explain .card-about-desc {
+  margin: 24px 0 598px;
+}
+@media only screen and (min-width: 768px) {
+  .collection-title strong {
+    font-size: 6.4rem;
+    line-height: 4.8rem;
+  }
+  .home-card-about .collection-one-item {
+    align-items: center;
+  }
+  .home-card-about .collection-item-img {
+    margin: 0;
+  }
+  .home-card-about .collection-item-body {
+    text-align: left;
+    margin: 0 0 0 55px;
+  }
+  .section-work {
+    margin-top: 540px;
+    text-align: left;
+  }
+
+  .card-work {
+    display: grid;
+	grid-template-columns: repeat(3,1fr);
+    text-align: start;
+  }
+  .Container-home .card-work-item::before{
+background-color: #fff;
+  }
+  .btn-work {
+    margin: 64px 0 0;
+  }
+  /* LA specification du component cardAbout dans home  */
+  .card-explain .card-about-body {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .card-explain .card-about-desc {
+    margin-bottom: 300px;
+  }
+}
+@media only screen and (min-width: 1180px) {
+  .collection-items {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .collection-title strong {
+    font-size: 8.2rem;
+  }
+  .home-card-about {
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -290px;
+  }
+  .home-card-about .collection-one-item {
+    padding: 72px 45px 48px;
+    width: auto;
+    margin: 0;
+  }
+  .home-card-about .collection-item-img {
+    margin: 0 auto 56px;
+  }
+  .home-card-about .collection-item-body {
+    text-align: center;
+    max-width: 255px;
+    margin: 0;
+  }
+  .section-work {
+    margin-top: 220px;
+  }
+  /* LA specification du component cardAbout dans home  */
+
+  .card-explain .card-about-desc {
+    margin-bottom: 355px;
+  }
+}

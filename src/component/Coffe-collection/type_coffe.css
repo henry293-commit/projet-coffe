@@ -1,0 +1,78 @@
+.collection-one-item {
+  width: 282px;
+  margin: 16px;
+}
+.collection-one-item:first-child {
+  margin-top: 0;
+}
+.collection-one-item:last-child {
+  margin-bottom: 0;
+}
+.collection-item-img {
+  width: 200px;
+  margin: 0 auto;
+}
+.collection-item-body {
+  text-align: center;
+}
+.collection-item-title {
+  font-family: "Fraunces 9pt";
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2.133rem;
+}
+.collection-item-desc {
+  text-align: center;
+}
+.collection-item-body .located{
+	margin-top: 22px;
+}
+.collection-item-body span {
+  display: block;
+  font-size: 1.0667rem;
+  font-style: normal;
+  line-height: 1.733rem;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .collection-one-item.home{
+    width: 573px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .collection-one-item.home .collection-one-item:first-child {
+    margin-top: -45px;
+  }
+  .collection-one-item.home	.collection-item-img {
+    flex: none;
+  }
+  .collection-item-body {
+    text-align: start;
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 1180px) {
+  .collection-one-item.home{
+    width: 180px;
+    display: block;
+  }
+  .collection-one-item.home .collection-item-img {
+    margin-bottom: 71.55px;
+  }
+  .collection-one-item.home .collection-item-body {
+    text-align: center;
+    margin-top: 0;
+  }
+  .collection-one-item.home .collection-one-item {
+    margin-top: -45px;
+  }
+  .collection-one-item.home .collection-item-body {
+    height: 134px;
+  }
+  .collection-one-item.home .collection-item-title {
+    font-size: 1.6rem;
+    line-height: 2.133rem;
+  }
+}

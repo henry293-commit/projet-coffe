@@ -1,0 +1,175 @@
+.header {
+  padding: 32px 24px;
+}
+.header img {
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-link li {
+  list-style-type: none;
+  margin: 0 33px;
+}
+.nav-link li a {
+  text-decoration: none;
+  color: var(--grey);
+  font-family: Barlow;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+.nav-link li a:hover {
+  color: var(--dar-grey-bleu);
+}
+
+.header-nav .btn-menu-close {
+  position: absolute;
+  top: 37px;
+  right: 24px;
+  z-index: 3;
+  display: none;
+  background-color: #fff;
+  border: none;
+}
+
+.header-nav .btn-menu-close img.hide {
+  display: none;
+}
+
+/* header home and description */
+
+.header-main {
+  margin-top: 100px;
+}
+.header-main.header-home {
+  background: url("../../assets/home/mobile/image-hero-coffeepress.jpg") center
+    center/ cover no-repeat;
+}
+.header-main.header-about {
+  background: url("../../assets/about/mobile/image-hero-whitecup.jpg") center
+    center/ cover no-repeat;
+}
+.header-main.header-plan {
+  background: url("../../assets/plan/mobile/image-hero-blackcup.jpg") center
+    center/ cover no-repeat;
+}
+.header-info {
+  text-align: center;
+  padding: 100px 24px 99px;
+}
+.header-title {
+  color: var(--light-cream);
+  font-family: "Fraunces 9pt";
+  font-size: 2.66667rem;
+  font-weight: 900;
+  line-height: 2.66667rem;
+}
+.header-description {
+  color: var(--light-cream);
+  opacity: 0.8;
+  margin: 24px 0 39px;
+}
+
+
+/* responsive for header nav */
+@media only screen and (max-width: 800px) {
+  /* .header-nav{
+		padding: 20px 0;
+	} */
+  .nav-link {
+    background: linear-gradient(
+      0deg,
+      rgba(254, 252, 247, 0.5) -1%,
+      #fefcf7 20.94%
+    );
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: none;
+    z-index: 2;
+    margin-top: 80px;
+    box-shadow: #fefcf7 0px 22px 70px 4px;
+  }
+  .nav-link.active {
+    display: flex;
+  }
+  .nav-link ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-link li {
+    margin: 20px 0;
+  }
+  .nav-link li a {
+    color: #333d4b;
+    text-align: center;
+    font-family: "Fraunces 9pt";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.133;
+  }
+  .nav-logo {
+    max-width: 163px;
+    position: absolute;
+    top: 37px;
+    left: 24px;
+    z-index: 3;
+  }
+  .header-nav .btn-menu-close {
+	display: block;
+  }
+ 
+}
+
+@media only screen and (min-width:768px) {
+	
+	  .header-main.header-home {
+		background: url("../../assets/home/tablet/image-hero-coffeepress.jpg")
+		  center center/ cover no-repeat;
+	  }
+	  .header-main.header-about {
+		background: url("../../assets/about/tablet/image-hero-whitecup.jpg") center
+		  center/ cover no-repeat;
+	  }
+	  .header-main.header-plan {
+		background: url("../../assets/plan/tablet/image-hero-blackcup.jpg") center
+		  center/ cover no-repeat;
+	  }
+	  .header-main .header-info{
+		max-width: 398px;
+		text-align: start;
+	  }
+	
+}
+@media only screen and (min-width:1180px) {
+	.header-main.header-home {
+		background: url("../../assets/home/desktop/image-hero-coffeepress.jpg")
+		  center center/ cover no-repeat;
+	  }
+	  .header-main.header-about {
+		background: url("../../assets/about/desktop/image-hero-whitecup.jpg") center
+		  center/ cover no-repeat;
+	  }
+	  .header-main.header-plan {
+		background: url("../../assets/plan/desktop/image-hero-blackcup.jpg") center
+		  center/ cover no-repeat;
+	  }
+}

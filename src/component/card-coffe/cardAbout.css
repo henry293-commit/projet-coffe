@@ -1,0 +1,28 @@
+.card-about{
+	background-color: var(--dar-grey-bleu);
+	padding: 64px 12px ;
+	text-align: center;
+	border-radius: 8px;
+
+
+}
+.card-about-title{
+	color: var(--light-cream);
+font-family: "Fraunces 9pt";
+font-size: 1.56667rem;
+font-weight: 900;
+line-height: 1.56667rem ; 
+display: inline-block;
+}
+.card-about-desc{
+	color: var(--light-cream);
+	opacity: .8;
+	/* margin: 24px 0 598px; */
+}
+@media only screen and (min-width: 768px) {
+	.card-about-body{
+		max-width: 540px;
+		margin: 0 auto;
+	}
+
+}

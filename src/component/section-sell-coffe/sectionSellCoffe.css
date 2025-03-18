@@ -1,0 +1,47 @@
+.section-sell-item {
+  padding: 0 24px;
+  margin-bottom: 110px;
+  cursor: pointer;
+}
+.section-sell-item.disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.button-title-arrow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.button-title-arrow strong {
+  color: var(--grey);
+  font-family: "Fraunces 9pt";
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.86rem;
+}
+.button-title-arrow button {
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+}
+.button-title-arrow img {
+  display: none;
+}
+.button-title-arrow img.active {
+  display: block;
+}
+.card-sell-container {
+  display: none;
+}
+.card-sell-container.card-open {
+  display: block;
+  cursor: pointer;
+
+}
+@media only screen and (min-width: 768px) {
+  .card-sell-container.card-open {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

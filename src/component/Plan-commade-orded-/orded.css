@@ -1,0 +1,56 @@
+.order_container_content {
+  background: url(../../assets/plan/mobile/bg-order-summary.png) lightgray 0px
+    0px / 100% 100% no-repeat;
+  color: #fff;
+  font-family: "Fraunces 9pt";
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2.66rem; /* 166.667% */
+  padding: 25px;
+  margin: 0 auto 40px;
+  border-radius: 10px;
+  max-width: 668px;
+}
+.orded_container_title {
+  opacity: 0.5037;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.order_container_content .orded_container-body {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+.order_container_content .orded_container-body span {
+  color: var(--dark-cyan);
+  text-align: center;
+  margin: 0 5px;
+}
+.create_plan_button {
+  
+  display: block;
+  margin: 0 auto 144px;
+}
+button:disabled {
+  background-color: #e2dedb;
+}
+@media only screen and (min-width: 768px) {
+ 
+  .order_container_content {
+    background: url(../../assets/plan/desktop/bg-order-summary.png) lightgray
+      0px 0px / 100% 100% no-repeat;
+  }
+}
+@media only screen and (min-width: 1100px) {
+	.orded_container {
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		flex-direction: column;
+	  }
+	  .order_container_content{
+		max-width: 700px;
+		margin-left: 0;
+		margin-right: 0;
+	  }
+}

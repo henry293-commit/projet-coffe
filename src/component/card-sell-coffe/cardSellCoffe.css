@@ -1,0 +1,32 @@
+.card-sell-item {
+  border-radius: 8px;
+  background-color: #f4f1eb;
+  padding: 25px;
+  margin:16px 0 ;
+}
+.card-sell-item:hover{
+	background-color: var(--pale-orange) ;
+}
+.card-sell-item.value_selected{
+	color: #fff;
+	background-color: var(--dark-cyan);
+}
+.card-sell-item-title {
+  font-family: "Fraunces 9pt";
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2.133rem;
+}
+.card-sell-item-body {
+  font-size: 1.067rem;
+  font-weight: 400;
+  line-height: 1.73rem;
+}
+@media only screen and (min-width:768px) {
+	.card-sell-item{
+		max-width: 223px;
+		height: 250px;
+		margin: 0;
+	}
+	
+}

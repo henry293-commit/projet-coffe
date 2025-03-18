@@ -1,0 +1,86 @@
+.container-plan .section-work {
+  border-radius: 10px;
+  background-color: var(--dar-grey-bleu);
+}
+.container-plan .card-work-body {
+  color: var(--light-cream);
+}
+.container-plan .section-work {
+  max-width: 1380px;
+  padding: 115px 85px 99px;
+  margin: 120px auto;
+}
+.card-work-body .section-work .card-work {
+  max-width: 1115px;
+}
+.order-coffe {
+  max-width: 1100px;
+  margin: auto;
+}
+.order-coffe-choose {
+  max-width: 730px;
+  margin: 0 auto;
+}
+.order-coffe-sumary{
+	display: none;
+}
+.orded-result{
+	padding: 0 24px;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+@media only screen and (min-width: 1100px) {
+  .order-coffe {
+    display: flex;
+    justify-content: space-between;
+  }
+  .order-coffe-choose {
+    flex: none;
+	width: 730px;
+  }
+  .order-coffe-sumary {
+    display: block;
+  }
+  .order-coffe-sumary ul {
+    margin: 0;
+    padding: 0;
+  }
+  .order-coffe-sumary li {
+    color: var(--dar-grey-bleu);
+    font-family: "Fraunces 9pt";
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.133rem;
+    opacity: 0.5;
+    list-style-type: none;
+    margin: 24px 0;
+    padding-right: 32.5px;
+  }
+  .order-coffe-sumary li:first-child {
+    margin-top: 0;
+  }
+  .order-coffe-sumary li:last-child {
+    margin-bottom: 0;
+  }
+  .order-coffe-sumary li:hover{
+	opacity: .7;
+  }
+  .order-coffe-sumary  li.card-active{
+	opacity: 1;
+	
+  }
+  .order-coffe-sumary span {
+    color: var(--gry);
+    font-family: "Fraunces 9pt";
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.133rem;
+    
+    margin-right: 25px;
+  }
+  .order-coffe li:first-child span {
+    color: var(--dark-cyan);
+  }
+  
+  
+}
